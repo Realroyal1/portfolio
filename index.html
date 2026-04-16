@@ -3,52 +3,162 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & SOCIAL MEDIA PREVIEW -->
     <title>Stephen Olawale | Brand & Web Specialist</title>
-
-    <!-- THIS IS THE PREVIEW CODE FOR WHATSAPP -->
-    <meta property="og:title" content="Stephen Olawale | Premium Brand Designer">
+    <meta name="description" content="Elevating modern brands with high-converting visual identities and modern websites.">
+    <meta property="og:title" content="Stephen Olawale | Premium Brand & Web Designer">
     <meta property="og:description" content="Helping brands stand out through high-end design.">
-    <meta property="og:image" content="stephen.png">
-    <!-- END OF PREVIEW CODE -->
+    <meta property="og:image" content="stephen.png"> 
+    <meta property="og:url" content="https://realroyal1.github.io/portfolio/">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><!DOCTYPE html>
-<html lang="en">
-<<!-- This makes your link look amazing when shared on WhatsApp/Social Media -->
-<meta property="og:title" content="Stephen Olawale | Premium Brand & Web Designer">
-<meta property="og:description" content="Elevating modern brands with high-converting visual identities and modern websites.">
-<meta property="og:image" content="stephen.png"> 
-<meta property="og:url" content="https://your-link.netlify.app">>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stephen Olawale | Brand & Web Specialist</title>
+    <!-- FONTS & ICONS -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        :root { --bg: #030712; --card-bg: #111827; --accent: #3b82f6; --text-main: #f3f4f6; --text-dim: #9ca3af; }
+        :root { 
+            --bg: #030712; 
+            --card-bg: #111827; 
+            --accent: #3b82f6; 
+            --text-main: #f3f4f6; 
+            --text-dim: #9ca3af; 
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
-        header { padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: rgba(3, 7, 18, 0.9); backdrop-filter: blur(15px); z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text-main); 
+            line-height: 1.6; 
+        }
+
+        header { 
+            padding: 20px 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            background: rgba(3, 7, 18, 0.9); 
+            backdrop-filter: blur(15px); 
+            z-index: 1000; 
+            border-bottom: 1px solid rgba(255,255,255,0.05); 
+        }
+
         .logo { font-weight: 800; font-size: 1.4rem; color: #fff; text-decoration: none; }
         .logo span { color: var(--accent); }
-        nav a { margin-left: 30px; color: var(--text-dim); text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
-        .hero { padding: 60px 8% 0; display: flex; align-items: center; gap: 40px; min-height: 90vh; }
+
+        nav a { 
+            margin-left: 30px; 
+            color: var(--text-dim); 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            font-weight: 600;
+            transition: 0.3s; 
+        }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero { 
+            padding: 60px 8% 0; 
+            display: flex; 
+            align-items: center; 
+            gap: 40px; 
+            min-height: 90vh; 
+        }
         .hero-text { flex: 1.2; }
         .hero h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin: 15px 0 25px; font-weight: 800; }
-        .hero-img-container { flex: 1; position: relative; display: flex; justify-content: center; align-self: flex-end; }
-        .hero-img-container::before { content: ''; position: absolute; bottom: 20%; width: 300px; height: 300px; background: var(--accent); filter: blur(120px); opacity: 0.25; }
-        .my-photo { width: 100%; max-width: 450px; position: relative; z-index: 1; filter: drop-shadow(0 10px 50px rgba(0,0,0,0.5)); }
-        .btn { padding: 16px 32px; border-radius: 12px; font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s; border: none; cursor: pointer; }
+        
+        .hero-img-container { 
+            flex: 1; 
+            position: relative; 
+            display: flex; 
+            justify-content: center; 
+            align-self: flex-end; 
+        }
+        .hero-img-container::before { 
+            content: ''; 
+            position: absolute; 
+            bottom: 20%; 
+            width: 300px; 
+            height: 300px; 
+            background: var(--accent); 
+            filter: blur(120px); 
+            opacity: 0.25; 
+        }
+
+        .my-photo { 
+            width: 100%; 
+            max-width: 450px; 
+            position: relative; 
+            z-index: 1; 
+            filter: drop-shadow(0 10px 50px rgba(0,0,0,0.5)); 
+        }
+
+        /* Buttons */
+        .btn { 
+            padding: 16px 32px; 
+            border-radius: 12px; 
+            font-weight: 600; 
+            text-decoration: none; 
+            display: inline-block; 
+            transition: 0.3s; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 0.9rem;
+        }
         .primary { background: var(--accent); color: white; margin-right: 15px; }
+        .primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
         .secondary { background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1); }
+        .secondary:hover { background: rgba(255,255,255,0.1); }
+
+        /* Portfolio */
         .section { padding: 80px 8%; }
-        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .project-card { background: var(--card-bg); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
+        .portfolio-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 30px; 
+        }
+        .project-card { 
+            background: var(--card-bg); 
+            border-radius: 24px; 
+            overflow: hidden; 
+            border: 1px solid rgba(255,255,255,0.05); 
+            transition: 0.4s;
+        }
+        .project-card:hover { transform: translateY(-10px); border-color: var(--accent); }
         .project-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
-        .project-info { padding: 20px; }
-        .contact-container { max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 30px; border-radius: 20px; text-align: center; }
-        footer { padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-dim); }
-        @media (max-width: 768px) { .hero { flex-direction: column; text-align: center; } .hero-img-container { order: -1; } nav { display: none; } }
+        .project-info { padding: 25px; }
+        .project-info h3 { margin-bottom: 10px; }
+
+        /* Contact Box */
+        .contact-container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: linear-gradient(135deg, #111827 0%, #030712 100%); 
+            padding: 60px 40px; 
+            border-radius: 40px; 
+            text-align: center; 
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        /* Footer */
+        footer { 
+            padding: 60px 8%; 
+            text-align: center; 
+            border-top: 1px solid rgba(255,255,255,0.05); 
+        }
+        .social-links { margin-bottom: 25px; display: flex; justify-content: center; gap: 20px; }
+        .social-links a { color: var(--text-dim); font-size: 1.5rem; transition: 0.3s; }
+        .social-links a:hover { color: var(--accent); transform: scale(1.2); }
+
+        @media (max-width: 768px) { 
+            .hero { flex-direction: column; text-align: center; padding-top: 40px; } 
+            .hero-img-container { order: -1; width: 100%; } 
+            nav { display: none; } 
+        }
     </style>
 </head>
 <body>
@@ -64,80 +174,82 @@
 <section class="hero">
     <div class="hero-text">
         <h1 style="color:white">Designing for the <span style="color:var(--accent)">Future.</span></h1>
-        <p style="color:var(--text-dim); margin-bottom:30px;">I'm Stephen Olawale. I help brands stand out through premium graphic design and modern websites.</p>
-        <a href="#portfolio" class="btn primary">View Work</a>
+        <p style="color:var(--text-dim); margin-bottom:30px; font-size: 1.2rem;">I'm Stephen Olawale. I help brands stand out through premium graphic design and modern high-converting websites.</p>
+        <a href="#portfolio" class="btn primary">View My Work</a>
         <a href="https://wa.me/2347059056196" class="btn secondary">WhatsApp Me</a>
     </div>
     <div class="hero-img-container">
-        <img src="stephen.png" alt="Stephen" class="my-photo">
+        <img src="stephen.png" alt="Stephen Olawale" class="my-photo">
     </div>
 </section>
 
 <section class="section" id="portfolio">
-    <h2 style="text-align:center; margin-bottom:40px; font-size:2.5rem;">Selected Works</h2>
+    <h2 style="text-align:center; margin-bottom:50px; font-size:2.5rem;">Selected Works</h2>
+    
     <div class="portfolio-grid">
+        <!-- Project 1 -->
         <div class="project-card">
             <img src="project1.jpg" alt="Project 1" class="project-img">
-            <div class="project-info"><h3>Brand Identity</h3></div>
+            <div class="project-info">
+                <span style="color: var(--accent); font-weight: bold; font-size: 0.8rem; text-transform: uppercase;">Identity Design</span>
+                <h3>Premium Brand Identity</h3>
+            </div>
         </div>
-        <!-- Project Card: Guru Tips -->
-<div class="project-card">
-    <img src="guru-portfolio.jpg" alt="Guru Tips Platform" class="project-img">
-    <div class="project-info">
-        <span style="color: var(--accent); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Web Development & Branding</span>
-        <h3 style="margin: 10px 0;">Guru Tips Prediction Platform</h3>
-        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 20px;">
-            A high-performance sport prediction brand featuring daily automated updates, a dedicated results tracking system, and seamless Telegram/WhatsApp integration.
-        </p>
-        <div style="display: flex; gap: 15px;">
-            <a href="https://realroyal1.github.io/gurutips/" target="_blank" class="btn primary" style="padding: 10px 20px; font-size: 0.8rem;">View Live Site</a>
+
+        <!-- Project 2: Guru Tips -->
+        <div class="project-card" style="border: 1px solid rgba(255, 204, 0, 0.3);">
+            <img src="guru-portfolio.jpg" alt="Guru Tips Platform" class="project-img">
+            <div class="project-info">
+                <span style="color: #ffcc00; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Web Development & Branding</span>
+                <h3 style="margin: 10px 0;">Official Guru Tips Platform</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 20px;">
+                    A high-performance sport prediction brand featuring a mobile app UI, daily automated updates, and a dedicated results system.
+                </p>
+                <a href="https://www.officialgurutips.com" target="_blank" class="btn primary" style="padding: 10px 20px; font-size: 0.8rem; background: #ffcc00; color: #000;">View Live Site</a>
+            </div>
         </div>
-    </div>
-</div>
+
+        <!-- Project 3 -->
         <div class="project-card">
             <img src="project3.jpg" alt="Project 3" class="project-img">
-            <div class="project-info"><h3>Social Media Ads</h3></div>
+            <div class="project-info">
+                <span style="color: var(--accent); font-weight: bold; font-size: 0.8rem; text-transform: uppercase;">Advertising</span>
+                <h3>Social Media Campaign Ads</h3>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="section" id="contact">
-    <div class="contact-container" style="background: linear-gradient(135deg, #111827 0%, #1e293b 100%); padding: 60px 30px; border-radius: 40px; border: 1px solid rgba(59, 130, 246, 0.3); text-align: center;">
-        
+    <div class="contact-container">
         <h2 style="font-size: 2.8rem; margin-bottom: 15px; color: #fff;">Let’s build something <span style="color: var(--accent);">amazing.</span></h2>
-        <p style="color: var(--text-dim); margin-bottom: 40px; font-size: 1.2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-            I am currently available for new branding and web design projects. Let's discuss your vision.
+        <p style="color: var(--text-dim); margin-bottom: 40px; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            I am currently available for new branding and web design projects. Let's discuss your vision and bring it to life.
         </p>
 
-        <!-- Main Buttons -->
         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-            
-            <!-- WhatsApp Button -->
-            <a href="https://wa.me/2347059056196?text=Hi%20Stephen,%20I'm%20interested%20in%20working%20with%20you!" 
-               class="btn primary" 
-               style="font-size: 1.1rem; padding: 18px 35px; display: flex; align-items: center; gap: 10px;">
-               <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i> Chat on WhatsApp
+            <a href="https://wa.me/2347059056196" class="btn primary">
+               <i class="fab fa-whatsapp"></i> Chat on WhatsApp
             </a>
-
-            <!-- Email Button -->
-            <a href="mailto:stephennoolawale@gmail.com" 
-               class="btn secondary" 
-               style="font-size: 1.1rem; padding: 18px 35px; display: flex; align-items: center; gap: 10px;">
-               <i class="far fa-envelope" style="font-size: 1.4rem;"></i> Send an Email
+            <a href="mailto:stephennoolawale@gmail.com" class="btn secondary">
+               <i class="far fa-envelope"></i> Send an Email
             </a>
-            
         </div>
 
-        <!-- Phone Number displayed below -->
         <p style="margin-top: 30px; color: var(--text-dim); font-weight: 500;">
             Direct Call: <a href="tel:+2347059056196" style="color: #fff; text-decoration: none;">+234 705 905 6196</a>
         </p>
-
     </div>
-</<div class="social-links">
-    <!-- Replace the links below with your actual profile URLs -->
-    <a href="https://instagram.com/stephen.oderinde"><i class="fab fa-instagram"></i></a>
-    <a href="https://behance.net/yourusername"><i class="fab fa-behance"></i></a>
-    <a href="https://linkedin.com/in/yourusername"><i class="fab fa-linkedin"></i></a>
-    <a href="https://wa.me/2347059056196"><i class="fab fa-whatsapp"></i></a>
-</div>>
+</section>
+
+<footer>
+    <div class="social-links">
+        <a href="https://instagram.com/stephen.oderinde" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/2347059056196" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:stephennoolawale@gmail.com"><i class="far fa-envelope"></i></a>
+    </div>
+    <p style="color: var(--text-dim); font-size: 0.9rem;">© 2026 Stephen Olawale | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
