@@ -127,11 +127,14 @@
             overflow: hidden; 
             border: 1px solid rgba(255,255,255,0.05); 
             transition: 0.4s;
+            display: flex;
+            flex-direction: column;
         }
         .project-card:hover { transform: translateY(-10px); border-color: var(--accent); }
         .project-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
-        .project-info { padding: 25px; }
-        .project-info h3 { margin-bottom: 10px; }
+        .project-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .project-info h3 { margin-bottom: 10px; font-size: 1.4rem; }
+        .project-info p { margin-bottom: 20px; font-size: 0.95rem; }
 
         /* Contact Box */
         .contact-container { 
@@ -187,34 +190,45 @@
     <h2 style="text-align:center; margin-bottom:50px; font-size:2.5rem;">Selected Works</h2>
     
     <div class="portfolio-grid">
-        <!-- Project 1 -->
+        <!-- Project 1: Brand Identity -->
         <div class="project-card">
-            <img src="project1.jpg" alt="Project 1" class="project-img">
+            <img src="project1.jpg" alt="Brand Identity" class="project-img">
             <div class="project-info">
                 <span style="color: var(--accent); font-weight: bold; font-size: 0.8rem; text-transform: uppercase;">Identity Design</span>
                 <h3>Premium Brand Identity</h3>
+                <p style="color: var(--text-dim);">Visual storytelling and logo systems for modern businesses.</p>
             </div>
         </div>
 
-        <!-- Project 2: Guru Tips -->
+        <!-- Project 2: Guru Tips (Live Site) -->
         <div class="project-card" style="border: 1px solid rgba(255, 204, 0, 0.3);">
             <img src="guru-portfolio.jpg" alt="Guru Tips Platform" class="project-img">
             <div class="project-info">
                 <span style="color: #ffcc00; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Web Development & Branding</span>
-                <h3 style="margin: 10px 0;">Official Guru Tips Platform</h3>
-                <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 20px;">
-                    A high-performance sport prediction brand featuring a mobile app UI, daily automated updates, and a dedicated results system.
-                </p>
-                <a href="https://www.officialgurutips.com" target="_blank" class="btn primary" style="padding: 10px 20px; font-size: 0.8rem; background: #ffcc00; color: #000;">View Live Site</a>
+                <h3>Official Guru Tips</h3>
+                <p style="color: var(--text-dim);">High-performance sport prediction brand featuring a mobile app UI and automated updates.</p>
+                <a href="https://www.officialgurutips.com" target="_blank" class="btn primary" style="background: #ffcc00; color: #000; font-size: 0.8rem; padding: 10px 20px; width: fit-content; margin-top: auto;">View Live Site</a>
             </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 3: Hua Han Restaurant (Live Site) -->
+        <div class="project-card" style="border: 1px solid rgba(239, 68, 68, 0.3);">
+            <img src="huahan-preview.jpg" alt="Hua Han Restaurant" class="project-img">
+            <div class="project-info">
+                <span style="color: #ef4444; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">UI/UX & Development</span>
+                <h3>Hua Han | Asian Fusion</h3>
+                <p style="color: var(--text-dim);">A modern, elegant web experience for a premium restaurant featuring smooth navigation.</p>
+                <a href="https://huahan.netlify.app/" target="_blank" class="btn primary" style="background: #ef4444; color: #fff; font-size: 0.8rem; padding: 10px 20px; width: fit-content; margin-top: auto;">View Live Site</a>
+            </div>
+        </div>
+
+        <!-- Project 4: Social Media Ads -->
         <div class="project-card">
-            <img src="project3.jpg" alt="Project 3" class="project-img">
+            <img src="project3.jpg" alt="Advertising" class="project-img">
             <div class="project-info">
                 <span style="color: var(--accent); font-weight: bold; font-size: 0.8rem; text-transform: uppercase;">Advertising</span>
-                <h3>Social Media Campaign Ads</h3>
+                <h3>Campaign Visuals</h3>
+                <p style="color: var(--text-dim);">High-conversion social media ads and marketing assets.</p>
             </div>
         </div>
     </div>
